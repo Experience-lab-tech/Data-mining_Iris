@@ -103,7 +103,5 @@ tanggal = pd.to_datetime(df["date"], errors="coerce")
 print("\n=== PEMERIKSAAN TANGGAL ===")
 print("Tanggal tidak valid:", tanggal.isnull().sum())
 
-#@ceperlan
-@ceperlan
 print("\n=== FREKUENSI VERSION ===")
 print(df["version"].value_counts(dropna=False).head(15))
